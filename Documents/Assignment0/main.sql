@@ -95,3 +95,8 @@ don't have permissions for copy so i'm using \copy
 this should work if you have the file in the downloads folder and change the netid to yours 
 */
 \copy Preliminary from '/common/home/js4069/Downloads/hmda_2017_nj_all-records_labels.csv' with (FORMAT CSV, HEADER);
+
+/*
+changing the primary id 
+*/
+alter table Preliminary add column ID serial primary key;
